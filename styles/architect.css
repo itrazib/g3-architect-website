@@ -16,6 +16,20 @@
      max-width: 1440px;
      margin: 0px auto;
 }
+.primary-description{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+}
 /* dark - o2 */
 .text-gray{
     color: #424242;
@@ -23,6 +37,10 @@
 /* dark - 01 */
 .text-dark-light{
     color: #131313;
+}
+/* dark - 03 */
+.text-dark-gray{
+    color: #727272;
 }
 
 /* NAv bar style */
@@ -43,4 +61,66 @@ header{
 .nav-title{
     font-size: 2.9rem;
     font-weight: 700;
+}
+.brand-content{
+ max-width: 850px;
+ margin: 0px auto;
+ text-align: center;
+ margin-bottom: 30px;
+}
+.brand-title{
+    font-size: 4rem;
+    font-weight: 700;
+} 
+.banner-image{
+    width: 100%;
+}
+
+/* MAin part start */
+main>section{
+    margin-top: 130px;
+}
+.feature-image-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 14px;
+}
+.our-feature-title{
+       margin-left: 73px;
+}
+.our-features{
+    align-items: center;
+}
+.our-feature-title{
+    max-width: 530px;
+}
+.feature-title{
+    font-size: 2.9rem;
+    margin-bottom: 32px;
+}
+.quick-list{
+    font-weight: 500;
+}
+/* responsive design */
+@media screen and (max-width:576px) {
+    .nav-bar,
+    .nav-links,
+    .our-features{
+        flex-direction: column;
+    }
+    .feature-image-container{
+        grid-template-columns: 1fr;
+    }
+    .our-feature-title{
+        margin: 20px;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 990px) {
+    .our-features{
+        flex-direction: column;
+    }  
+    .feature-image-container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
 }
